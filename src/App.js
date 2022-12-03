@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Introduce from './perfil/introduce';
+import Resume from './perfil/resume';
+import SocialMedia from './perfil/socialmedia/index.js';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main'>
+      <Introduce meuNome="Natália" arquivoFoto={require('./perfil/assets/images/perfil.jpg')} />
+      <br></br>
+      <br></br>
+      <Resume></Resume>
+      <br></br>
+      <br></br>
+      <SocialMedia></SocialMedia>
     </div>
   );
 }
